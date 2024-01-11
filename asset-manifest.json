@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/VladyslavKshenin.github.io/goit-react-hw-04-phonebook/static/css/main.1083b3b2.css",
+    "main.js": "/VladyslavKshenin.github.io/goit-react-hw-04-phonebook/static/js/main.63211cb8.js",
+    "index.html": "/VladyslavKshenin.github.io/goit-react-hw-04-phonebook/index.html",
+    "main.1083b3b2.css.map": "/VladyslavKshenin.github.io/goit-react-hw-04-phonebook/static/css/main.1083b3b2.css.map",
+    "main.63211cb8.js.map": "/VladyslavKshenin.github.io/goit-react-hw-04-phonebook/static/js/main.63211cb8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1083b3b2.css",
+    "static/js/main.63211cb8.js"
+  ]
+}
