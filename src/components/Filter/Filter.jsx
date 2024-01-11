@@ -1,36 +1,29 @@
-import {Component} from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
-import { Container } from './Filter.styled'
-import { Input } from './Filter.styled'
-import {Lebel} from './Filter.styled'
+import { Container, Input, Lebel } from './Filter.styled';
 
-export class Filter extends Component {
-  static propTypes = {
-    value: PropTypes.string.isRequired,
-    onFilterChange: PropTypes.func.isRequired,
-  };
-
-  handleChange = e => {
-    // console.log(e);
+export const Filter = ({ value, onFilterChange }) => {
+  const handleChange = (e) => {
     const { value } = e.currentTarget;
-    // console.log(value);
-    this.props.onFilterChange(value);
+    onFilterChange(value);
   };
 
-  render() {
-    const { value } = this.props;
-    return (
-      <Container>
-        <Lebel>
-          Find contacts by name
-          <Input
-            type="text"
-            name="filter"
-            value={value}
-            onChange={this.handleChange}
-          />
-        </Lebel>
-      </Container>
-    );
-  }
-}
+  return (
+    <Container>
+      <Lebel>
+        Find contacts by name
+        <Input
+          type="text"
+          name="filter"
+          value={value}
+          onChange={handleChange}
+        />
+      </Lebel>
+    </Container>
+  );
+};
+
+Filter.propTypes = {
+  value: PropTypes.string.isRequired,
+  onFilterChange: PropTypes.func.isRequired,
+};
